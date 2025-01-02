@@ -1,1 +1,8 @@
 venv\Scripts\Activate.ps1
+source venv/bin/activate
+
+scp -r D:\DEV\sql-monitor\back\sql-monitor-backend keith@192.168.0.22:/var/www/sql-monitor-backend
+
+scp -r D:\DEV\sql-monitor\front\dist keith@192.168.0.22:/var/www/sql-monitor
+
+sudo nano /etc/systemd/system/fastapi.service
